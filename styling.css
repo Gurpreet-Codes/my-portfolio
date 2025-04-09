@@ -1,0 +1,576 @@
+/* Import Stylish Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightpink; /* Light Pink */
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+header {
+    background-color: hotpink;
+    padding: 10px 0;
+    position: fixed; /* Makes it stick to the top */
+    top: 0; /* Stick to the top of the viewport */
+    width: 100%; /* Full width */
+    z-index: 999; /* Keep it above all other content */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: lightpink;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 150px 20px; /* Adjust depending on nav height */
+    text-align: center;
+    background-image: url('images/banner.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero .text-box {
+    display: inline-block;
+    padding: 5px; /* Add spacing inside */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.hero h1 {
+    font-family: "Playfair Display", ;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    background: rgba(0, 0, 0, 0.300); /* Black with 50% transparency */
+}
+
+.hero p {
+    font-family: "Playfair Display", ;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.300); /* Black with 50% transparency */
+}
+
+.hero a {
+    display: inline-block;
+    font-weight: bold;
+    background-color: white; /* Pink button */
+    color: hotpink;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.hero a:hover {
+    color: white;
+    background-color: hotpink; /* Darker pink on hover */
+}
+
+/* About Section */
+.about {
+    background-color: lavenderblush; /* Slight transparency */
+    padding: 60px 20px;
+    color: black;
+}
+
+.about-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffd6e7; /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.about-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.popular-services {
+    padding: 60px 20px;
+    background-color: pink;
+}
+
+.popular-services h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.service {
+    font-size: 18px;
+    background: white;
+    color: hotpink;
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+.services-section {
+    gap: 30px; 
+    padding: 30px 20px; 
+}
+
+.service-box {
+    margin: 15px;
+    padding: 25px;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+    max-width: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.cta-link {
+    display: inline-block;
+    background-color: white; /* Pink button */
+    color: hotpink;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.cta-link:hover {
+    color: white;
+    background-color: hotpink; /* Darker pink on hover */
+}
+
+.testimonials {
+    position: relative;
+    padding: 40px 20px;
+    color: black;
+}
+
+.testimonial-header {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 50px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header h2 {
+    color: hotpink;
+    margin: 0;
+    font-size: 24px;
+    text-shadow: none;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/background.jpg');
+    background-size: contain;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.testimonial-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+
+/* Footer */
+footer {
+    background-color: hotpink;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- General Page Styling --- */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fffafc;
+    color: white;
+}
+
+
+/* --- Services Section (Cards) --- */
+
+/*CSS for Services webpage*/
+.page-header {
+    padding: 20px 20px;
+    padding-top: 60px;
+    background-color: #ffcde0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+}
+
+.services-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px;
+    gap: 10px;
+    background: #fff0f6;
+}
+
+.service-box {
+    background-color: white;
+    color: #333;
+    width: 280px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.03);
+}
+
+.service-box h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    font-family: "Baskervville", serif;
+}
+
+.service-box p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.service-box span {
+    font-weight: bold;
+    color: #cc0066;
+    font-size: 1.1rem;
+}
+
+/* --- Section Titles --- */
+.services-section h2,
+.pricing-tables-section h2 {
+    width: 100%;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: #cc0066;
+    margin-top: 20px;
+}
+
+.services-section p,
+.pricing-tables-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #444;
+    width: 100%;
+}
+
+/* --- Pricing Tables --- */
+.price-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: #cc0066;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.price-table th,
+.price-table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.price-table thead {
+    background-color: #cc0066;
+    color: white;
+}
+
+/* --- Extra Info --- */
+.extra-info {
+    padding: 40px 20px;
+    background-color: #ffe6f0;
+    color: black;
+}
+
+.extra-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+}
+
+.extra-info ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+}
+
+.extra-info li {
+    margin-bottom: 10px;
+}
+
+.booking-buttons {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: hotpink;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #cc0066;
+    transform: scale(1.03);
+}
+
+/*CSS for Gallery Page*/
+
+/* Gallery Page Styles */
+.gallery-page {
+    padding: 50px 20px;
+    background-color: #ffe6f0;
+    color: #333;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.gallery-header h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    color: #cc0066;
+}
+
+.gallery-header p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #444;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #cc0066;
+}
+
+.gallery-item p {
+    text-align: center;
+    padding: 10px;
+    font-family: "Baskervville", serif;
+    font-size: 1.1rem;
+    background-color: #fff;
+    color: #333;
+}
+.gallery-item video {
+    width: 100%;
+    height: auto;
+    border-bottom: 5px solid #cc0066;
+    display: block;
+}
+
+
+/*CSS for 404 Page*/
+.error-container {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #ffe6f0;
+    color: #cc0066;
+    font-family: "Playfair Display", serif;
+}
+
+.error-container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.error-image {
+    max-width: 300px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.error-actions {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-pink, .btn-outline {
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn-pink {
+    background-color: #cc0066;
+    color: white;
+}
+
+.btn-pink:hover {
+    background-color: #99004d;
+}
+
+.btn-outline {
+    border: 2px solid #cc0066;
+    color: #cc0066;
+    background-color: white;
+}
+
+.btn-outline:hover {
+    background-color: #cc0066;
+    color: white;
+}
+
+/* Floating emoji animation */
+.floating-emoji {
+    font-size: 80px;
+    animation: float 3s ease-in-out infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
